@@ -9,8 +9,8 @@ class CElegansBrain(nn.Module):
         # these are from common literature
         self.num_neurons = 302
         self.num_sensory_neurons = 60
-        self.num_motor_neurons = 95
-        self.num_interneurons = 147
+        self.num_motor_neurons = 94
+        self.num_interneurons = 148
         self.num_light_sensors = 30
         self.num_vibration_sensors = 30
 
@@ -52,11 +52,3 @@ class CElegansBrain(nn.Module):
 
     def reset(self):
         self.neuron_states.zero_()
-
-# example
-brain = CElegansBrain()
-# worm needs to learn the scaling on its own (like 10000 light means there's a lamp right on top of it)
-light_input = 5
-vibration_input = 3
-motor_output = brain(light_input, vibration_input)
-print(f"Motor neuron outputs: {motor_output}")

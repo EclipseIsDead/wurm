@@ -67,3 +67,7 @@ Runtime controls:
 - arrow keys or WASD: drive the worm in manual mode
 - mouse click: move the food
 - Escape: quit
+
+Demo:
+
+<img width="797" height="816" alt="Screenshot 2026-06-11 at 7 06 50 PM" src="https://github.com/user-attachments/assets/fc796771-8b8d-4966-8560-0692b2d32f25" />
